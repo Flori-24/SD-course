@@ -1,0 +1,64 @@
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'GREEN GREEN GREEN GREEN GREEN GREEN'
+    'YELLOW YELLOW RED RED BLUE BLUE'
+    'ORANGE ORANGE ORANGE ORANGE BLUE BLUE';
+    background-color: white;
+    gap: 20px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+} 
+.sub-items-container, .sub-items-container-red{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  height:50%;
+  margin-top: 30px;  
+}
+.sub-item, .sub-item-red{
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  font-size: 18px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: left;
+  height: 40%;
+}
+.grid-container  > div{
+  text-align: left;
+  padding: 50px ;
+  font-size: 24px;
+}
+.grid-item1{
+   grid-area:GREEN;
+   background-color:rgb(95, 212, 95);
+}
+.grid-item2{
+  grid-area: YELLOW;
+  background-color: yellow;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+} 
+.grid-item3{
+  grid-area: RED;
+  background-color: rgb(226, 43, 49);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.grid-item4{
+  grid-area: BLUE;
+  background-color: rgb(19, 167, 209);
+}
+.grid-item5{
+  grid-area: ORANGE;
+  background-color: rgb(250, 163, 23);
+}
