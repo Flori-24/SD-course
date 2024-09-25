@@ -1,0 +1,20 @@
+.flex-container{
+    DISPLAY: FLEX;
+    background-color: brown;
+    flex-wrap: wrap;
+    /*flex-direction: collumn*/
+}
+.flex-container > div{
+    background-color: burlywood;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size:30px;
+}
+img{
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    z-index:-1;
+
+}

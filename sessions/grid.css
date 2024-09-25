@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    /*grid-template-columns: auto auto auto;*/
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    background-color: aquamarine;
+    padding: 10px;
+    gap: 10px
+    /*display: flex- horizontaly*/
+} 
+    
+.grid-container  > div{
+  background-color: darkgray;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+.grid-item1{
+      grid-area:header;
+    /*background-color: rgb(171, 236, 214);
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+   border: 1px solid green;
+  /*if you change the layout the content will remain the same*/
+
+}
+.grid-item2{
+  grid-area: menu;
+}
+.grid-item3{
+  grid-area: main;
+}
+.grid-item4{
+  grid-area: right;
+}
+.grid-item5{
+  grid-area: footer;
+}
+

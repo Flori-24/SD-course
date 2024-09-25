@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="style.css"> <!--external CSS link-->
+        <style>  <!-- Embedded CSS-->
+            p{
+                color:chartreuse; 
+                font-size:20px;
+            }  
+            h2{
+                color:darkgreen !important
+            }
+        </style>  <!--For all the paragraphs-->
+        <!-- all the browsers will have 16px font-size default-->
+    </head>
+    <body>
+        <!-- Inline CSS--> 
+        <h2 style="color:brown;background-color:bisque;">This my page using VS code.</h2>
+        <a href="https://www.google.com" target="_blank">click here to go to google </a><br/><br/>  
+        <p id="p1">This goes as the home page of my web site.</p>
+        <b class="cap">bold</b> <!--Associate a class to a tag for common styling-->
+        <a href="b">click</a><br/>
+        <img src="./images/bird.jpg" alt="Bird Image" height="200"/>
+        <!--try to pull an image from external website-->
+        <hr/> <!--horizontal line-->
+        <p id="para1" class="cap" >Second paragraph bhsblsjbl dafajfh fakhfawkjfhawk fakfh af afhakfhakfh fak fafafahfaf a fakfha fakf akfha fakfhaf fakfha fakhfa fakhffrjhlrdhjlhlh gjlsjhlh jslhjlh </p>
+        <form action="test.html">   <!--form will be submitted or sent-->
+         <fieldset>  <!--Outline with some border for Name, Email, Mobile and Password-->
+            <legend>Personal information</legend>  <!--Dividing form into sections -->
+             
+            <table> 
+                <tr>
+            <td><label for="name" >Name:</label></td>
+            <td><input type="text" id="name" placeholder="input your name" value="David" ></td><br/><br/> <!--Line Break-->
+         </tr>
+         <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" placeholder="input your email" ></td><br/><br/>
+        </tr>
+        <tr>
+            <td><label for="number"> Mobile:</label></td>
+            <td><input type="number" id="mobile" placeholder="input your mobile"></td><br/><br/>
+        </tr>
+        <tr>
+            <td><label for="pwd">Password:</label></td>
+            <td><input type="password" id="pwd" placeholder="input your password"></td><br/><br/>
+        </tr>
+        </table>
+        </fieldse<t>
+            <label for="addr">Address:</label>
+            <textarea name="" id="addr" rows="3" ></textarea><br/><br/>
+            <label for="sports">Favorite Sports</label>
+            <input type="radio" name="sports" id="sports">Tennis 
+            <input type="radio" name="sports" id="sports">Soccer <!--name="sports" make you choose an option-->
+            <input type="radio" name="sports" id="sports">Cricket
+            <br/><br/>
+            <label for="country">Countries</label>
+            <select name="" id="country">
+                <option value="USA"></option>
+                <option value="USA">USA</option>
+                <option value="USA">UK</option>
+                <option value="USA">Germany</option>
+                <option value="USA"selected >France</option> <!--Option already selected-->
+                <option value="USA">Germany</option>
+            </select>
+            <br/><br/>
+            <label for="date"> Date of Birth:</label>  <!-- Date selection-->
+            <input type="date" id="date" min="01-01-2000"><br><br/>
+
+            <input type="submit" value="Login">
+
+        </form>
+        <hr/>
+        <hr/>
+
+        <table border="1">
+            <caption>Student Details </caption>
+            <thead>
+                <tr>
+                     <th colspan="2">Name</th>
+                     <th>Address</th>
+                     <th>Age</th>
+                 </tr>
+           </thead>
+           <tbody>
+             <tr>
+                <td>Alice</td>
+                <td>Davis</td>
+                <td>UK</td>
+                <td>25</td>          
+            </tr>
+            <tr>
+                <td>Dave</td>
+                <td>Tailor</td>
+                <td>US</td>
+                <td>32</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <table border="1">
+            <caption>Favorite and least Favorite things</caption>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Bob</th>
+                <th>Alice</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Favorite</th>
+                <td>Color</td>
+                <td>Blue</td>
+                <td>Purple</td>
+            </tr>
+            <tr>
+                <td>Flavor</td>
+                <td>Banana</td>
+                <td>Chocolate</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Least Favorite</th>
+                <td>Color</td>
+                <td>Yellow</td>
+                <td>Pink</td>
+            </tr>
+            <tr>
+                <td>Flavor</td>
+                <td>Mint</td>
+                <td>Walnut</td>
+            </tr> 
+        </table>
+        <hr>
+        <h3 class="cap">Unordered list </h3>
+        <ul>
+            <li>Milk</li>  <!--Block level tag-->
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ul>
+        <h3>Ordered list </h3>
+        <ol>
+            <li>Milk</li>  <!--Block level tag-->
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ol>
+        <h3>Description list </h3>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>-Black and hot </dd>
+            <dt>Milk</dt>
+            <dd>-White and hot or cold </dd>
+        </dl>
+
+    </body>
+</html>
+
+<!--Block level tags-->
+<!--Inline tags-->
+
+
+
+<!--HTML Structure-->
+<!--Type of tags-->
+ <!--block level tags, Inline tags-->
