@@ -84,10 +84,25 @@ number_list = [2,4,6,8,10,12]
 
 tuple1 = (10, 20, 30, 40)
 a, b, c, d= tuple1
-print("a=", a)
-print("b=", b)
-print("c=", c)
-print("d=", d)
+#print("a=", a)
+#print("b=", b)
+#print("c=", c)
+#print("d=", d)
+
+
+# Convert two lists into a dictionary
+# Input:
+# keys = ['Ten', 'Twenty', 'Thirty']
+# values = [10, 20, 30]
+# Output:
+# {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+ 
+
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+result=dict(zip(keys, values))
+print(result)
+
 
 
 
