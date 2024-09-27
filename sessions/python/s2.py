@@ -62,10 +62,35 @@ list_1 = [5, 10, 15, 20, 25, 50, 20]
 #-Reverse the given tuple
 # tuple1 = (10, 20, 30, 40, 50)
 # Output: (50, 40, 30, 20, 10)
+#tuple1= (10, 20, 30, 40, 50)   
+#result= tuple1[::-1]
+#print(result)               OR
 
-tuple1= [10, 20, 30, 40, 50]
-result= tuple1[::-1]
-print(result)
+#start
+#stop
+#step
+number_list = [2,4,6,8,10,12]
+#print(number_list[2:])     #we can apply for list or tuple
+#print(number_list[:2])
+#print(number_list[::-1])
+
+# -Unpack the tuple items
+# Input: tuple1 = (10, 20, 30, 40)
+# Output:
+# print(a) = 10
+# print(b) = 20
+# print(c) = 30
+# print(d) = 40
+
+tuple1 = (10, 20, 30, 40)
+a, b, c, d= tuple1
+print("a=", a)
+print("b=", b)
+print("c=", c)
+print("d=", d)
+
+
+
 
 
 
