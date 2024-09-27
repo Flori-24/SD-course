@@ -90,7 +90,7 @@ a, b, c, d= tuple1
 #print("d=", d)
 
 
-# Convert two lists into a dictionary
+# -Convert two lists into a dictionary
 # Input:
 # keys = ['Ten', 'Twenty', 'Thirty']
 # values = [10, 20, 30]
@@ -98,9 +98,25 @@ a, b, c, d= tuple1
 # {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
  
 
-keys = ['Ten', 'Twenty', 'Thirty']
+keys = ['Ten', 'Twenty', 'Thirty'] 
 values = [10, 20, 30]
-result=dict(zip(keys, values))
+result=dict(zip(keys, values))  
+#result=tuple(zip(keys, values))
+#print(result)
+
+
+
+
+#-Write a Python program to check if value 200 exists in the following dictionary.
+#Input:
+#    sample_dict = {'a': 100, 'b': 200, 'c': 300}
+#Output:
+#   200 present in a dict
+
+sample_dict = {'a': 100, 'b': 200, 'c': 300}
+value= 200
+if value in sample_dict.values():
+         result= ("200 present")
 print(result)
 
 
