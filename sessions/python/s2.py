@@ -1,6 +1,8 @@
 #-Write a python program to turn every intem in a list its square
 #eg: [2,4,6,3] Output: [4,16,36,9]
 
+
+from Factors import print_factors
 #eg =[2,4,6,3]
 #def square(number) :
    # return number**2
@@ -55,7 +57,7 @@
 #print(list1)
 
 #-Remove all the occurences of 20
-list_1 = [5, 10, 15, 20, 25, 50, 20]
+#list_1 = [5, 10, 15, 20, 25, 50, 20]
 #result = [num for num in list_1 if num !=20]
 #print(result)
 
@@ -69,7 +71,7 @@ list_1 = [5, 10, 15, 20, 25, 50, 20]
 #start
 #stop
 #step
-number_list = [2,4,6,8,10,12]
+#number_list = [2,4,6,8,10,12]
 #print(number_list[2:])     #we can apply for list or tuple
 #print(number_list[:2])
 #print(number_list[::-1])
@@ -82,8 +84,8 @@ number_list = [2,4,6,8,10,12]
 # print(c) = 30
 # print(d) = 40
 
-tuple1 = (10, 20, 30, 40)
-a, b, c, d= tuple1
+#tuple1 = (10, 20, 30, 40)
+#a, b, c, d= tuple1
 #print("a=", a)
 #print("b=", b)
 #print("c=", c)
@@ -98,9 +100,9 @@ a, b, c, d= tuple1
 # {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
  
 
-keys = ['Ten', 'Twenty', 'Thirty'] 
-values = [10, 20, 30]
-result=dict(zip(keys, values))  
+#keys = ['Ten', 'Twenty', 'Thirty'] 
+#values = [10, 20, 30]
+#result=dict(zip(keys, values))  
 #result=tuple(zip(keys, values))
 #print(result)
 
@@ -113,18 +115,53 @@ result=dict(zip(keys, values))
 #Output:
 #   200 present in a dict
 
-sample_dict = {'a': 100, 'b': 200, 'c': 300}
-value= 200
-if value in sample_dict.values():
-         result= ("200 present")
-print(result)
+#sample_dict = {'a': 100, 'b': 200, 'c': 300}
+#value= 200
+#if value in sample_dict.values():           
+ #        result= ("200 present")
+#print(result)   OR
+
+#sample_dict = {'a': 100, 'b': 200, 'c': 300}
+#print(tuple(sample_dict.keys()))     
+
+
+#-Get the key of a minimum value from the following dictionary
+#sample_dict = {
+ # 'Physics': 82,
+ # 'Math': 65,
+  #'history': 75
+#}
+#Output:
+   # Math
+
+sample_dict = {
+  'Physics': 82,
+  'Math': 65,
+  'history': 75
+}
+#print(min(sample_dict, key=sample_dict.get))
+
+
+#-Enumerate
+#list1 = ["eat", "drink", "sleep"]
+#print(list(enumerate(list1,5)))
+    
+
+
+                            #PYTHON MODULES
+
+#-Create a python module that gives factors of a number
 
 
 
+#print_factors(56)
 
-
-
-
+#-create a list and shuffle its elements using random module
+#import random
+#list_1 = [1, 2, 3, 4, 5]
+#print("Original list:", list_1)
+#random.shuffle(list_1)
+#print("Shuffled list:", list_1)
 
 
 
