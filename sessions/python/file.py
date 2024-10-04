@@ -1,6 +1,6 @@
-#fp = open(r'C:\Users\Alin\Desktop\SD course\sessions\python\sample\data.txt ', 'r')
-#print(fp.read())
-#fp.close()
+fp = open(r'C:\Users\Alin\Desktop\SD course\sessions\python\sample\data.txt ', 'r')
+print(fp.read())
+fp.close()
 
 
 
