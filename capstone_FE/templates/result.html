@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Result</h1>
+        <p id="quiz-result"></p>
+        <a href="index.html">Back to Quizzes</a>
+    </div>
+    
+    <script src="/static/js/script.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+        const resultElement = document.getElementById('quiz-result');
+        if (score !== null) {
+            resultElement.textContent = `Your score: ${score}`;
+        } else {
+            resultElement.textContent = 'No score available.';
+        }
+    </script>
+</body>
+</html>
